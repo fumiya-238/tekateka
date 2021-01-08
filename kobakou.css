@@ -1,0 +1,47 @@
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-list img{
+    text-align: center;
+    width: 50%;
+}
+
+body {
+    background: #eeeeee;
+}
+
+h1 {
+    color: #364e96;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+ .flex-list {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .flex-list img{
+     flex: auto;
+     width: 50%;
+ }
+
+}
+
+@media (max-width : 670px) {
+    .flex-list{
+        flex-direction: column;
+    }
+    .flex-list img{
+        margin: 0 auto;
+    }
+}
